@@ -1,0 +1,118 @@
+header {
+  border-bottom: 4px solid black;
+}
+.navbar {
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 0 2rem;
+  &__logo {
+    flex: 1 1 30%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    span {
+      font-family: "Modak", cursive;
+      font-size: 3rem;
+    }
+    &__bg {
+      background: white;
+      border-radius: 0 0 2rem 2rem;
+      padding: 1rem 3rem;
+    }
+  }
+
+  &__list {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &:last-of-type {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &__item {
+    display: inline;
+    font-weight: bold;
+    margin: 1rem;
+    a {
+      &,
+      &:visited,
+      &:active {
+        color: $text1;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      &:hover {
+        color: #aa090e;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.likeA {
+  cursor: pointer;
+  color: $text1;
+  font-weight: bold;
+  &:hover {
+    color: #aa090e;
+    font-weight: bold;
+  }
+}
+
+.burger__btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: $primary;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: $break-sm) {
+  .navbar {
+    flex-direction: column;
+    &__logo {
+      order: 0;
+      &__bg {
+        border-radius: 0 0 2rem 2rem;
+        padding: 0.1rem 3rem;
+      }
+    }
+    &__list,
+    &__list:last-of-type {
+      order: 1;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+    }
+    .open {
+      display: flex;
+    }
+
+    &__item {
+      margin: 0.5rem;
+    }
+    .burger__btn {
+      display: flex;
+    }
+  }
+}
