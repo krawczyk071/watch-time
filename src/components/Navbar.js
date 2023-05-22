@@ -27,13 +27,6 @@ const Navbar = () => {
           <li className="navbar__item">
             <Link href={"/sale"}>NBAedition</Link>
           </li>
-        </ul>
-        <div className="navbar__logo">
-          <div className="navbar__logo__bg">
-            <span>BigHead</span>
-          </div>
-        </div>
-        <ul className={`navbar__list ${burgerOpen ? "open" : ""}`}>
           <li className="navbar__item">
             <Link href={"/filtered"}>
               WinterSpecial <i className="fa-regular fa-snowflake"></i>
@@ -49,6 +42,11 @@ const Navbar = () => {
             </div> */}
           </li>
         </ul>
+        <div className="navbar__logo">
+          <div className="navbar__logo__bg">
+            <span>BigHead</span>
+          </div>
+        </div>
         <button class="nobtn burger__btn" onClick={toggleBurger}>
           <span class="bar"></span>
           <span class="bar"></span>
