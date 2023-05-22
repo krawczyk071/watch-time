@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-// import { cartContext } from "../context/cartContext";
+import { cartContext } from "../context/cartContext";
 
 const QtySelector = ({ product, where, qty, addQty }) => {
-  // const [cart, dispatch] = useContext(cartContext);
+  const [cart, dispatch] = useContext(cartContext);
   return (
     <div className={where === "cart" ? "cart__list__item__qty" : "qty"}>
       <div
@@ -27,7 +27,7 @@ const QtySelector = ({ product, where, qty, addQty }) => {
           value={
             where !== "cart"
               ? qty
-              : cart.find((i) => i.webID === product.webID)?.qty || 0
+              : cart.find((i) => i.webID === product._id)?.qty || 0
           }
           readOnly
         />

@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useContext, useState } from "react";
-// import { cartContext } from "../context/cartContext";
-// import CartBar from "./CartBar";
+import { cartContext } from "../context/cartContext";
+import CartBar from "./CartBar";
 
 const Navbar = () => {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
   function cartToggler() {
     setCartOpen((prev) => !prev);
   }
-  // const [cart] = useContext(cartContext);
+  const [cart] = useContext(cartContext);
   return (
     <div className="header">
       <nav className="navbar">
@@ -33,19 +33,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar__item" onClick={cartToggler}>
-            {/* <div className="likeA">
+            <div className="likeA">
               Basket (
               {cart.reduce((acc, item) => {
                 return acc + item.qty;
               }, 0)}
               )
-            </div> */}
+            </div>
           </li>
         </ul>
         <div className="navbar__logo">
-          <div className="navbar__logo__bg">
-            <span>BigHead</span>
-          </div>
+          Watch<span>Time</span>
         </div>
         <button class="nobtn burger__btn" onClick={toggleBurger}>
           <span class="bar"></span>
@@ -53,7 +51,7 @@ const Navbar = () => {
           <span class="bar"></span>
         </button>
       </nav>
-      {/* <CartBar cartOpen={cartOpen} cartToggler={cartToggler} /> */}
+      <CartBar cartOpen={cartOpen} cartToggler={cartToggler} />
     </div>
   );
 };

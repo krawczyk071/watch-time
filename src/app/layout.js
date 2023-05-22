@@ -3,6 +3,8 @@ import "../styles/style.scss";
 
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import { CartProvider } from "@/context/cartContext";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <CartProvider>
+          <Toaster />
+          <Navbar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

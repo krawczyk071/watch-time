@@ -16,14 +16,12 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 1;
+    font-family: "Bitter", cursive;
+    font-weight: 500;
+    font-size: 3rem;
     span {
-      font-family: "Modak", cursive;
-      font-size: 3rem;
-    }
-    &__bg {
-      background: white;
-      border-radius: 0 0 2rem 2rem;
-      padding: 1rem 3rem;
+      font-weight: 800;
+      font-size: 3.1rem;
     }
   }
 

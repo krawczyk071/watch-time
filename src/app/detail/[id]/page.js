@@ -3,14 +3,17 @@ import HatBox from "@/components/HatBox";
 import Loader from "@/components/Loader";
 import OrderBox from "@/components/OrderBox";
 import Related from "@/components/Related";
+import { getById } from "@/utils/sanity";
 import React, { useState } from "react";
 
-const Detail = ({ id }) => {
-  const [detail, setDetail] = useState({
-    data: {},
-    loading: true,
-    error: false,
-  });
+const Detail = async ({ params }) => {
+  const [product] = await getById(params.id);
+  console.log({ product });
+  // const [detail, setDetail] = useState({
+  //   data: {},
+  //   loading: true,
+  //   error: false,
+  // });
 
   // useEffect(() => {
   //   setDetail((prev) => ({ ...prev, loading: true }));
@@ -33,18 +36,16 @@ const Detail = ({ id }) => {
   //     });
   // }, [id]);
 
-  return !detail.loading ? (
+  return (
     <div className="detail">
       <div className="detail__box">
-        <HatBox detail={detail.data} />
+        <HatBox detail={product} />
         <div className="detail__sidebar">
-          <OrderBox detail={detail.data} />
-          <Related />
+          <OrderBox detail={product} />
+          {/* <Related /> */}
         </div>
       </div>
     </div>
-  ) : (
-    <Loader />
   );
 };
 

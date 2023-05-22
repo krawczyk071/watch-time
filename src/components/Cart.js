@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 
 import CartItem from "./CartItem";
 import { cartContext } from "../context/cartContext";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { formatPrice } from "../utils/helpers.js";
 
 const Cart = () => {
   const [cart, dispatch] = useContext(cartContext);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const cartItems = cart.map((item) => (
     <CartItem item={item} key={item.webId} />
@@ -17,7 +17,7 @@ const Cart = () => {
   }, 0);
   function handleOrder() {
     clearCart();
-    navigate(`/confirm?t=${total}`);
+    router.push(`/confirm?t=${total}`);
   }
   function clearCart() {
     dispatch({ type: "CLEAR" });

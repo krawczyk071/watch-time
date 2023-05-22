@@ -6,17 +6,20 @@ import Card from "./Card";
 import Loader from "./Loader";
 import Pagination from "./Pagination";
 import { products as productsEx } from "../utils/apiExample";
+import { getProducts } from "@/utils/sanity";
 
-const Products = ({ query }) => {
-  const [itemOffset, setItemOffset] = useState(0);
-  const [hats, setHats] = useState({
-    data: {},
-    loading: true,
-    error: false,
-  });
+const Products = async (params) => {
+  const products = await getProducts();
+
+  // const [itemOffset, setItemOffset] = useState(0);
+  // const [hats, setHats] = useState({
+  //   data: {},
+  //   loading: false,
+  //   error: false,
+  // });
   // useEffect(() => {
   //   setHats((prev) => ({ ...prev, loading: true }));
-  //   fetchFromAPI(`products/list?offset=${itemOffset}&${query}`)
+  //   fetchFromAPI(`products/list?offset=${itemOffset}&${params.query}`)
   //     .then((data) => {
   //       setHats({
   //         data: data.payload.products,
@@ -37,28 +40,25 @@ const Products = ({ query }) => {
   //     });
   // }, [query, itemOffset]);
 
-  const allItems = hats.pages;
-  const itemsPerPage = 24;
-  const pageCount = Math.ceil(allItems / itemsPerPage);
+  // const allItems = hats.pages;
+  // const itemsPerPage = 24;
+  // const pageCount = Math.ceil(allItems / itemsPerPage);
 
-  const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % allItems;
-    setItemOffset(newOffset);
-    window.scrollTo(0, 0);
-  };
+  // const handlePageClick = (event) => {
+  //   const newOffset = (event.selected * itemsPerPage) % allItems;
+  //   setItemOffset(newOffset);
+  //   window.scrollTo(0, 0);
+  // };
 
   return (
     <div className="products">
-      {hats.loading ? (
-        <Loader />
-      ) : (
-        <div className="cards__box">
-          {hats.data.map((hat) => (
-            <Card key={hat.webID} hat={hat} />
-          ))}
-        </div>
-      )}
-      <Pagination pageCount={pageCount} handlePageClick={handlePageClick} />
+      <div className="cards__box">
+        {products.map((hat) => (
+          <Card key={hat._id} hat={hat} />
+        ))}
+      </div>
+
+      {/* <Pagination pageCount={pageCount} handlePageClick={handlePageClick} /> */}
     </div>
   );
 };

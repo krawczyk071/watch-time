@@ -32,6 +32,11 @@ export const product = {
       type: "number",
     },
     {
+      name: "rating",
+      title: "Rating",
+      type: "number",
+    },
+    {
       name: "details",
       title: "Details",
       type: "string",

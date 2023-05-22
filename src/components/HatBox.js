@@ -1,34 +1,34 @@
 import React from "react";
+import { urlForImage } from "../../sanity/lib/image";
 
 const HatBox = ({ detail }) => {
-  const photos = detail.altImages
-    .map((i) => i.url.replace(/=50/g, "=180"))
-    .slice(0, -1)
-    .map((url) => <img src={url} key={url} alt="additional" />);
+  // const photos = detail.altImages
+  //   .map((i) => i.url.replace(/=50/g, "=180"))
+  //   .slice(0, -1)
+  //   .map((url) => <img src={url} key={url} alt="additional" />);
 
   return (
     <div className="hat__box">
-      <h1>{detail.productTitle}</h1>
+      <h1>{detail.name}</h1>
       <div className="hat__more">
         <div className="hat__reviews">
-          Rating: {detail.avgRating} ({detail.ratingCount})
+          Rating: {detail.rating} ({detail?.ratingCount})
         </div>
       </div>
       <div className="hat__photo">
-        <img src={detail.images[0].url} alt="main" />
+        <img src={urlForImage(detail.image[0])} alt="main" />
       </div>
-      <div className="hat__photo-more">{photos}</div>
-      <h2>{detail.brand}</h2>
+      {/* <div className="hat__photo-more">{photos}</div> */}
+      {/* <h2>{detail.brand}</h2> */}
       <div
         className="hat__desc"
-        dangerouslySetInnerHTML={{ __html: detail.description.longDescription }}
+        dangerouslySetInnerHTML={{ __html: detail.details }}
       ></div>
     </div>
   );
 };
 
 export default HatBox;
-
 // brand
 // payload.products[0].description.shortDescription
 // payload.products[0].images[0].url
