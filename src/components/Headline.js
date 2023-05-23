@@ -4,7 +4,7 @@ const Headline = () => {
   return (
     <div className="headline">
       <h1>
-        Explore the <span>best selection</span> of Baseball Caps online.
+        Explore the <span>best selection</span> of watches online.
       </h1>
     </div>
   );

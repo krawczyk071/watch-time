@@ -2,7 +2,7 @@
   flex-shrink: 0;
   color: #fffafa;
   background: $gradient1;
-  overflow: hidden;
+  padding: 1rem;
   &__box {
     display: flex;
     flex-direction: column;
@@ -10,31 +10,15 @@
     p {
       margin: 0.5rem;
     }
-  }
-  &__stats {
-    display: grid;
-    width: 50%;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-  }
-  &__stat {
-    text-align: center;
-    color: $text1;
-  }
-  &__text {
-    font-size: 0.7rem;
+    &__subtext {
+      font-size: 1.2rem;
+      color: $primary;
+    }
+    &__text {
+      font-size: 0.7rem;
+    }
   }
 }
 
 @media screen and (max-width: $break-sm) {
-  .footer {
-    &__stats {
-      width: 90%;
-    }
-    &__box {
-      // margin-top: 2rem;
-    }
-  }
 }

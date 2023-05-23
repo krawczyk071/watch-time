@@ -1,5 +1,5 @@
-header {
-  border-bottom: 4px solid black;
+.header {
+  background: $secondary;
 }
 .navbar {
   margin: 0 auto;
@@ -33,38 +33,27 @@ header {
     margin: 0;
     padding: 0;
 
-    &:last-of-type {
-      display: flex;
-      justify-content: flex-end;
-    }
-  }
-  &__item {
-    display: inline;
-    font-weight: bold;
-    margin: 1rem;
-    a {
-      &,
-      &:visited,
-      &:active {
-        color: $text1;
-        font-weight: bold;
-        text-decoration: none;
+    &__item {
+      display: inline;
+      font-weight: bold;
+      margin: 1rem;
+      a,
+      .likeA {
+        &,
+        &:visited,
+        &:active {
+          font-weight: bold;
+          text-decoration: none;
+          color: $text1;
+          cursor: pointer;
+        }
+        &:hover {
+          text-decoration: underline;
+          font-weight: bold;
+          color: $text1;
+        }
       }
-      &:hover {
-        color: #aa090e;
-        font-weight: bold;
-      }
     }
-  }
-}
-
-.likeA {
-  cursor: pointer;
-  color: $text1;
-  font-weight: bold;
-  &:hover {
-    color: #aa090e;
-    font-weight: bold;
   }
 }
 
@@ -86,31 +75,4 @@ header {
 }
 
 @media screen and (max-width: $break-sm) {
-  .navbar {
-    flex-direction: column;
-    &__logo {
-      order: 0;
-      &__bg {
-        border-radius: 0 0 2rem 2rem;
-        padding: 0.1rem 3rem;
-      }
-    }
-    &__list,
-    &__list:last-of-type {
-      order: 1;
-      flex-direction: column;
-      align-items: center;
-      display: none;
-    }
-    .open {
-      display: flex;
-    }
-
-    &__item {
-      margin: 0.5rem;
-    }
-    .burger__btn {
-      display: flex;
-    }
-  }
 }

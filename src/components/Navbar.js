@@ -18,23 +18,23 @@ const Navbar = () => {
     <div className="header">
       <nav className="navbar">
         <ul className={`navbar__list ${burgerOpen ? "open" : ""}`}>
-          <li className="navbar__item">
+          <li className="navbar__list__item">
             <Link href={"/"}>Home</Link>
           </li>
-          <li className="navbar__item">
+          <li className="navbar__list__item">
             <Link href={"/shop"}>Explore</Link>
           </li>
-          <li className="navbar__item">
-            <Link href={"/sale"}>NBAedition</Link>
+          <li className="navbar__list__item">
+            <Link href={"/sale"}>Women</Link>
           </li>
-          <li className="navbar__item">
+          <li className="navbar__list__item">
             <Link href={"/filtered"}>
-              WinterSpecial <i className="fa-regular fa-snowflake"></i>
+              Retro <i className="fa-regular fa-snowflake"></i>
             </Link>
           </li>
-          <li className="navbar__item" onClick={cartToggler}>
+          <li className="navbar__list__item" onClick={cartToggler}>
             <div className="likeA">
-              Basket (
+              Cart (
               {cart.reduce((acc, item) => {
                 return acc + item.qty;
               }, 0)}
