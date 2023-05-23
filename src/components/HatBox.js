@@ -2,10 +2,9 @@ import React from "react";
 import { urlForImage } from "../../sanity/lib/image";
 
 const HatBox = ({ detail }) => {
-  // const photos = detail.altImages
-  //   .map((i) => i.url.replace(/=50/g, "=180"))
-  //   .slice(0, -1)
-  //   .map((url) => <img src={url} key={url} alt="additional" />);
+  const photos = detail.images
+    .slice(0, -1)
+    .map((url) => <img src={urlForImage(url)} key={url} alt="additional" />);
 
   return (
     <div className="hat__box">
@@ -16,10 +15,14 @@ const HatBox = ({ detail }) => {
         </div>
       </div>
       <div className="hat__photo">
-        <img src={urlForImage(detail.image[0])} alt="main" />
+        <img src={urlForImage(detail.images[0])} alt="main" />
       </div>
-      {/* <div className="hat__photo-more">{photos}</div> */}
-      {/* <h2>{detail.brand}</h2> */}
+      <div className="hat__photo-more">{photos}</div>
+      <h2>{detail.brand}</h2>
+      {/* <div
+        className="hat__desc"
+        dangerouslySetInnerHTML={{ __html: detail.longDescription }}
+      ></div> */}
       <div
         className="hat__desc"
         dangerouslySetInnerHTML={{ __html: detail.details }}
@@ -29,7 +32,3 @@ const HatBox = ({ detail }) => {
 };
 
 export default HatBox;
-// brand
-// payload.products[0].description.shortDescription
-// payload.products[0].images[0].url
-// altImages.url

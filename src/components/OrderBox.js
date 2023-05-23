@@ -4,6 +4,7 @@ import { cartContext } from "../context/cartContext";
 import { formatPrice } from "../utils/helpers";
 import { useState } from "react";
 import QtySelector from "./QtySelector";
+import { toast } from "react-hot-toast";
 
 const OrderBox = ({ detail }) => {
   const [, dispatch] = useContext(cartContext);
@@ -29,7 +30,7 @@ const OrderBox = ({ detail }) => {
             payload: { item: detail, qty: qty },
           });
           setQty(1);
-          alert("Added");
+          toast.success("Successfully Added!");
         }}
       >
         Add to order

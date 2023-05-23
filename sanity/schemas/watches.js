@@ -1,11 +1,11 @@
-export const product = {
-  name: "product",
-  title: "Product",
+export const watches = {
+  name: "watches",
+  title: "Watches",
   type: "document",
   fields: [
     {
-      name: "image",
-      title: "Image",
+      name: "images",
+      title: "Images",
       type: "array",
       of: [{ type: "image" }],
       options: {
@@ -21,10 +21,6 @@ export const product = {
       name: "slug",
       title: "Slug",
       type: "slug",
-      options: {
-        source: "name",
-        maxLength: 90,
-      },
     },
     {
       name: "price",
@@ -37,15 +33,34 @@ export const product = {
       type: "number",
     },
     {
+      name: "ratingCount",
+      title: "RatingCount",
+      type: "number",
+    },
+    {
+      name: "shortDescription",
+      title: "Short Description",
+      type: "string",
+    },
+    {
+      name: "longDescription",
+      title: "Long Description",
+      type: "string",
+    },
+    {
       name: "details",
       title: "Details",
       type: "string",
     },
     {
-      name: "description",
-      title: "Description",
-      type: "array",
-      of: [{ type: "block" }],
+      name: "brand",
+      title: "Brand",
+      type: "string",
+    },
+    {
+      name: "webID",
+      title: "webID",
+      type: "string",
     },
   ],
 };

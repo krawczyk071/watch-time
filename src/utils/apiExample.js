@@ -22,7 +22,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6235047/womens-new-era-navy-new-york-yankees-sherpa-full-zip-jacket.jsp",
-    webID: "6235047",
+    _id: "6235047",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -92,7 +92,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5846221/mens-new-era-royal-los-angeles-dodgers-2022-city-connect-59fifty-team-fitted-hat.jsp",
-    webID: "5846221",
+    _id: "5846221",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -158,7 +158,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4074329/mens-new-era-navy-new-york-yankees-game-authentic-collection-on-field-59fifty-fitted-hat.jsp",
-    webID: "4074329",
+    _id: "4074329",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -224,7 +224,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340340/mens-new-era-green-green-bay-packers-2023-nfl-draft-39thirty-flex-hat.jsp",
-    webID: "6340340",
+    _id: "6340340",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -290,7 +290,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4032866/mens-new-era-black-minnesota-vikings-color-dim-59fifty-fitted-hat.jsp",
-    webID: "4032866",
+    _id: "4032866",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -356,7 +356,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5888677/mens-new-era-mint-san-diego-padres-2022-city-connect-59fifty-fitted-hat.jsp",
-    webID: "5888677",
+    _id: "5888677",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -422,7 +422,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5751562/mens-new-era-black-pittsburgh-pirates-2022-batting-practice-39thirty-flex-hat.jsp",
-    webID: "5751562",
+    _id: "5751562",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -488,7 +488,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4375499/mens-new-era-navy-milwaukee-brewers-game-team-classic-39thirty-flex-hat.jsp",
-    webID: "4375499",
+    _id: "4375499",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -554,7 +554,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5794719/mens-new-era-baltimore-orioles-blackout-trucker-9fifty-snapback-hat.jsp",
-    webID: "5794719",
+    _id: "5794719",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -620,7 +620,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340549/mens-new-era-black-baltimore-ravens-2023-nfl-draft-9forty-adjustable-hat.jsp",
-    webID: "6340549",
+    _id: "6340549",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -686,7 +686,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5916010/mens-new-era-black-los-angeles-dodgers-team-logo-59fifty-fitted-hat.jsp",
-    webID: "5916010",
+    _id: "5916010",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -752,7 +752,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5654865/mens-new-era-navy-cleveland-guardians-authentic-collection-on-field-road-low-profile-59fifty-fitted-hat.jsp",
-    webID: "5654865",
+    _id: "5654865",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -818,7 +818,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4044026/mens-new-era-royal-los-angeles-dodgers-authentic-collection-on-field-59fifty-performance-fitted-hat.jsp",
-    webID: "4044026",
+    _id: "4044026",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -884,7 +884,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4048573/mens-new-era-black-san-francisco-giants-game-authentic-collection-on-field-59fifty-fitted-hat.jsp",
-    webID: "4048573",
+    _id: "4048573",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -950,7 +950,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4140781/mens-new-era-miami-marlins-black-on-field-authentic-collection-59fifty-fitted-hat.jsp",
-    webID: "4140781",
+    _id: "4140781",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1016,7 +1016,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4285758/mens-new-era-navyyellow-milwaukee-brewers-alternate-2020-authentic-collection-on-field-low-profile-fitted-hat.jsp",
-    webID: "4285758",
+    _id: "4285758",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1082,7 +1082,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5888648/mens-new-era-mint-san-diego-padres-2022-city-connect-9fifty-snapback-adjustable-hat.jsp",
-    webID: "5888648",
+    _id: "5888648",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -1148,7 +1148,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6233243/mens-new-era-navy-st-louis-city-sc-kick-off-9fifty-snapback-hat.jsp",
-    webID: "6233243",
+    _id: "6233243",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -1214,7 +1214,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340427/mens-new-era-stoneblue-detroit-lions-2023-nfl-draft-39thirty-flex-hat.jsp",
-    webID: "6340427",
+    _id: "6340427",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1280,7 +1280,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5752854/youth-new-era-light-blue-boston-red-sox-2021-city-connect-9fifty-snapback-adjustable-hat.jsp",
-    webID: "5752854",
+    _id: "5752854",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -1346,7 +1346,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5751292/mens-new-era-navy-new-york-yankees-2022-batting-practice-39thirty-flex-hat.jsp",
-    webID: "5751292",
+    _id: "5751292",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1412,7 +1412,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5751468/mens-new-era-black-new-york-giants-classic-9fifty-trucker-snapback-hat.jsp",
-    webID: "5751468",
+    _id: "5751468",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -1478,7 +1478,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340508/mens-new-era-scarlet-san-francisco-49ers-2023-nfl-draft-59fifty-fitted-hat.jsp",
-    webID: "6340508",
+    _id: "6340508",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1544,7 +1544,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340563/mens-new-era-navy-dallas-cowboys-2023-nfl-draft-59fifty-fitted-hat.jsp",
-    webID: "6340563",
+    _id: "6340563",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1610,7 +1610,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340464/mens-new-era-stoneroyal-new-york-giants-2023-nfl-draft-on-stage-59fifty-fitted-hat.jsp",
-    webID: "6340464",
+    _id: "6340464",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1676,7 +1676,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340464/mens-new-era-stoneroyal-new-york-giants-2023-nfl-draft-on-stage-59fifty-fitted-hat.jsp",
-    webID: "6340464",
+    _id: "6340464",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1742,7 +1742,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340475/mens-new-era-stonemidnight-green-philadelphia-eagles-2023-nfl-draft-on-stage-59fifty-fitted-hat.jsp",
-    webID: "6340475",
+    _id: "6340475",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1808,7 +1808,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5888589/mens-new-era-navy-new-york-yankees-2022-4th-of-july-low-profile-59fifty-fitted-hat.jsp",
-    webID: "5888589",
+    _id: "5888589",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -1874,7 +1874,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4048854/mens-new-era-black-kansas-city-chiefs-the-league-9forty-adjustable-hat.jsp",
-    webID: "4048854",
+    _id: "4048854",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -1940,7 +1940,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5276199/mens-new-era-navy-chicago-white-sox-logo-white-59fifty-fitted-hat.jsp",
-    webID: "5276199",
+    _id: "5276199",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2006,7 +2006,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5276183/mens-new-era-navy-minnesota-twins-logo-white-59fifty-fitted-hat.jsp",
-    webID: "5276183",
+    _id: "5276183",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2072,7 +2072,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5753108/mens-new-era-royal-new-york-mets-2022-batting-practice-low-profile-59fifty-fitted-hat.jsp",
-    webID: "5753108",
+    _id: "5753108",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2138,7 +2138,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5682967/mens-new-era-blackwhite-denver-nuggets-202122-city-edition-official-59fifty-fitted-hat.jsp",
-    webID: "5682967",
+    _id: "5682967",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2204,7 +2204,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6156046/mens-new-era-brown-las-vegas-raiders-team-color-pack-59fifty-fitted-hat.jsp",
-    webID: "6156046",
+    _id: "6156046",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2270,7 +2270,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5794890/mens-new-era-san-diego-padres-black-on-black-core-classic-20-9twenty-adjustable-hat.jsp",
-    webID: "5794890",
+    _id: "5794890",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -2336,7 +2336,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4039441/mens-new-era-navyred-atlanta-braves-home-authentic-collection-on-field-low-profile-59fifty-fitted-hat.jsp",
-    webID: "4039441",
+    _id: "4039441",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2402,7 +2402,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4135799/mens-new-era-black-pittsburgh-pirates-game-authentic-collection-on-field-59fifty-fitted-hat.jsp",
-    webID: "4135799",
+    _id: "4135799",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2468,7 +2468,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-4771750/mens-new-era-red-new-york-yankees-logo-white-59fifty-fitted-hat.jsp",
-    webID: "4771750",
+    _id: "4771750",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2534,7 +2534,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340538/mens-new-era-stonescarlet-san-francisco-49ers-2023-nfl-draft-9fifty-snapback-adjustable-hat.jsp",
-    webID: "6340538",
+    _id: "6340538",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -2600,7 +2600,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5887121/mens-new-era-powder-blue-milwaukee-brewers-2022-city-connect-9fifty-snapback-adjustable-hat.jsp",
-    webID: "5887121",
+    _id: "5887121",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -2666,7 +2666,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340535/mens-new-era-stonemidnight-green-philadelphia-eagles-2023-nfl-draft-9fifty-snapback-adjustable-hat.jsp",
-    webID: "6340535",
+    _id: "6340535",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -2732,7 +2732,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6159624/mens-new-era-black-milwaukee-brewers-repeat-a-frame-9fifty-trucker-snapback-hat.jsp",
-    webID: "6159624",
+    _id: "6159624",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -2798,7 +2798,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5320735/mens-new-era-black-chicago-bulls-team-low-profile-59fifty-fitted-hat.jsp",
-    webID: "5320735",
+    _id: "5320735",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2864,7 +2864,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340377/mens-new-era-stoneroyal-buffalo-bills-2023-nfl-draft-39thirty-flex-hat.jsp",
-    webID: "6340377",
+    _id: "6340377",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2930,7 +2930,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340439/mens-new-era-stoneroyal-new-york-giants-2023-nfl-draft-39thirty-flex-hat.jsp",
-    webID: "6340439",
+    _id: "6340439",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -2996,7 +2996,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6340364/mens-new-era-royal-buffalo-bills-2023-nfl-draft-39thirty-flex-hat.jsp",
-    webID: "6340364",
+    _id: "6340364",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -3062,7 +3062,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-6233127/mens-new-era-navy-boston-red-sox-2023-clubhouse-39thirty-flex-hat.jsp",
-    webID: "6233127",
+    _id: "6233127",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -3127,7 +3127,7 @@ export const products = [
       "Men's New Era Camo/Olive Dallas Cowboys Trucker 9FIFTY Snapback Hat",
     seoURL:
       "/product/prd-6186504/mens-new-era-camoolive-dallas-cowboys-trucker-9fifty-snapback-hat.jsp",
-    webID: "6186504",
+    _id: "6186504",
     couponEligible: false,
     isVGC: false,
     variations: "None",
@@ -3187,7 +3187,7 @@ export const products = [
     isAvailableforShip: true,
     seoURL:
       "/product/prd-5681244/mens-new-era-red-new-york-red-bulls-kick-off-39thirty-flex-hat.jsp",
-    webID: "5681244",
+    _id: "5681244",
     couponEligible: false,
     isVGC: false,
     variations: "Size",
@@ -3242,7 +3242,7 @@ export const details = {
     //       longDescription:
     //         "<p>Stay warm and cozy in this New York Yankees full-zip jacket from New Era. It features super-soft Sherpa fabric with the New York Yankees logo displayed on the front and an adjustable hood for extra heat. Roomy pockets also make sliding in your hands or essentials easy.</p></br><p>PRODUCT FEATURES</p><ul><li>Full-zip</li><li>Officially licensed</li><li>Embroidered graphics</li><li>Imported</li><li>Brand: New Era</li><li>Long sleeve</li><li>Hood with drawstring</li><li>Midweight jacket suitable for moderate temperatures</li><li>Sherpa fabric</li><li>Two front pockets</li><li>Machine wash, tumble dry low</li><li>Material: 100% Polyester</li></ul>",
     //     },
-    //     webID: "6235047",
+    //     _id: "6235047",
     //     price: {
     //       regularPriceType: "Regular",
     //       salePriceStatus: "Sale",
@@ -3956,7 +3956,7 @@ export const details = {
           longDescription:
             "<p>Celebrate your fandom in a new way when you get this Atlanta Braves Authentic Collection On-Field Low Profile 59FIFTY fitted hat from New Era.</p></br><p>PRODUCT FEATURES</p><ul><li>Material:  100% Polyester</li><li>Mid Crown</li><li>Structured fit</li><li>Flat bill with ability to curve</li><li>Fitted</li><li>Raised embroidery</li><li>Contrast color underbill</li><li>Six panels with eyelets</li><li>Embroidered graphics</li><li>Surface washable</li><li>Officially licensed</li><li>Brand: New Era</li></ul>",
         },
-        webID: "4039441",
+        _id: "4039441",
         price: {
           regularPriceType: "Regular",
           salePriceStatus: null,

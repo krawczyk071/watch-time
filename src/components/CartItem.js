@@ -6,11 +6,11 @@ const CartItem = ({ item }) => {
     <div className="cart__list__item">
       <div className="cart__list__item__photo">
         <img
-          src={`https://media.kohlsimg.com/is/image/kohls/${item.webID}?wid=180&hei=180&op_sharpen=1`}
+          src={`https://media.kohlsimg.com/is/image/kohls/${item._id}?wid=180&hei=180&op_sharpen=1`}
           alt=""
         />
       </div>
-      <h3 className="cart__list__item__name">{item.productTitle}</h3>
+      <h3 className="cart__list__item__name">{item.name}</h3>
       <QtySelector
         product={item}
         where="cart"

@@ -8,7 +8,6 @@ import React, { useState } from "react";
 
 const Detail = async ({ params }) => {
   const [product] = await getById(params.id);
-  console.log({ product });
   // const [detail, setDetail] = useState({
   //   data: {},
   //   loading: true,
@@ -17,7 +16,7 @@ const Detail = async ({ params }) => {
 
   // useEffect(() => {
   //   setDetail((prev) => ({ ...prev, loading: true }));
-  //   fetchFromAPI(`products/detail?webID=${id}`)
+  //   fetchFromAPI(`products/detail?_id=${id}`)
   //     .then((data) => {
   //       setDetail({
   //         data: data.payload.products[0],

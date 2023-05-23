@@ -33,9 +33,9 @@ const Related = () => {
       <div className="related__box">
         {related.data.map((item) => (
           <div
-            key={item.webID}
+            key={item._id}
             className="related__item"
-            onClick={() => router.push(`/detail/${item.webID}`)}
+            onClick={() => router.push(`/detail/${item._id}`)}
           >
             <img src={item.image.url} alt="" />
           </div>

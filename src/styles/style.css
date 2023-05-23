@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&family=Modak&family=Sniglet:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
 html,
 body,
 div,
@@ -619,22 +620,17 @@ select:focus + .focus {
 }
 .footer {
   flex-shrink: 0;
-  position: relative;
-  isolation: isolate;
   color: #fffafa;
-  background: linear-gradient(700deg, #061161, #aa090e);
+  background: linear-gradient(90deg, #6d5a88, #1f1d28);
   overflow: hidden;
 }
-.footer::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 75%;
-  right: 0;
-  transform: skewY(-2deg) translate(0, -40px);
-  z-index: -1;
-  background: #ffdcb7;
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__box p {
+  margin: 0.5rem;
 }
 .footer__stats {
   display: grid;
@@ -646,20 +642,10 @@ select:focus + .focus {
 }
 .footer__stat {
   text-align: center;
-  color: wheat;
+  color: #f0f0f0;
 }
 .footer__text {
   font-size: 0.7rem;
-}
-.footer__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 300px;
-}
-.footer__box p {
-  margin: 0.5rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -687,15 +673,13 @@ header {
   align-items: center;
   justify-content: center;
   z-index: 1;
-}
-.navbar__logo span {
-  font-family: "Modak", cursive;
+  font-family: "Bitter", cursive;
+  font-weight: 500;
   font-size: 3rem;
 }
-.navbar__logo__bg {
-  background: white;
-  border-radius: 0 0 2rem 2rem;
-  padding: 1rem 3rem;
+.navbar__logo span {
+  font-weight: 800;
+  font-size: 3.1rem;
 }
 .navbar__list {
   flex: 1 1 30%;
@@ -715,7 +699,7 @@ header {
   margin: 1rem;
 }
 .navbar__item a, .navbar__item a:visited, .navbar__item a:active {
-  color: #301f40;
+  color: #f0f0f0;
   font-weight: bold;
   text-decoration: none;
 }
@@ -726,7 +710,7 @@ header {
 
 .likeA {
   cursor: pointer;
-  color: #301f40;
+  color: #f0f0f0;
   font-weight: bold;
 }
 .likeA:hover {
@@ -747,7 +731,7 @@ header {
 .burger__btn .bar {
   height: 3px;
   width: 100%;
-  background-color: #061161;
+  background-color: #ac8ad6;
   border-radius: 10px;
 }
 
@@ -850,7 +834,7 @@ header {
 .pagination .page-number {
   font-size: 16px;
   font-weight: 600;
-  color: #061161;
+  color: #ac8ad6;
   background: #fff;
   padding: 10px 20px;
   border-radius: 7px;
@@ -863,7 +847,7 @@ header {
 }
 .pagination .active {
   color: #fff;
-  background: #061161;
+  background: #ac8ad6;
 }
 .pagination .active:hover {
   color: #aa090e;
@@ -954,8 +938,8 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #301f40;
-  background: #ffdcb7;
+  color: #f0f0f0;
+  background: #81a986;
 }
 
 #root {
@@ -988,7 +972,7 @@ img {
 }
 
 .btn__primary {
-  background: #f16821;
+  background: #b6ecbd;
 }
 
 section {

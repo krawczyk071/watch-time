@@ -9,7 +9,7 @@ const TopItem = ({ hat }) => {
   return (
     <div
       className="top__item"
-      onClick={() => router.push(`/detail/${hat.webID}`)}
+      onClick={() => router.push(`/detail/${hat._id}`)}
     >
       <div className="top__img">
         <img src={hat.url} alt="" />
@@ -20,7 +20,7 @@ const TopItem = ({ hat }) => {
 };
 
 const Top = () => {
-  const hots = hotData.map((h) => <TopItem key={h.webID} hat={h} />);
+  const hots = hotData.map((h) => <TopItem key={h._id} hat={h} />);
   return (
     <div className="top">
       <h2>Hottest Items:</h2>

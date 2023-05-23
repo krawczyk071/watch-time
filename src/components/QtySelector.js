@@ -27,7 +27,7 @@ const QtySelector = ({ product, where, qty, addQty }) => {
           value={
             where !== "cart"
               ? qty
-              : cart.find((i) => i.webID === product._id)?.qty || 0
+              : cart.find((i) => i._id === product._id)?.qty || 0
           }
           readOnly
         />

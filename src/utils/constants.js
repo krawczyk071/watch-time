@@ -33,21 +33,21 @@ export const nbaTeams = [
 
 export const hotData = [
   {
-    webID: 5845569,
+    _id: 5845569,
     productTitle:
       "Men's New Era Red Los Angeles Angels 2022 City Connect 59FIFTY Fitted Hat",
     price: "45.99",
     url: "https://media.kohlsimg.com/is/image/kohls/5845569?wid=180&hei=180&op_sharpen=1",
   },
   {
-    webID: 5007245,
+    _id: 5007245,
     productTitle:
       "Men's New Era Aqua Miami Dolphins Classic Trucker 9FIFTY Snapback Hat",
     price: "31.99",
     url: "https://media.kohlsimg.com/is/image/kohls/5007245?wid=180&hei=180&op_sharpen=1",
   },
   {
-    webID: 4609980,
+    _id: 4609980,
     productTitle:
       "Men's New Era Kelly Green Philadelphia Eagles Throwback 9FIFTY Adjustable Snapback Hat",
     price: "30.00",
