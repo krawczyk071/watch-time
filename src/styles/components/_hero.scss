@@ -1,22 +1,39 @@
 .hero {
   display: flex;
   flex-direction: column;
+  padding-top: 3rem;
   &__photo {
     display: flex;
     align-items: center;
     justify-content: center;
     &__img {
-      max-height: 300px;
+      max-width: 500px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        inset: 50%;
+        transform: translateX(-50%);
+        background: $gradient3;
+        z-index: -1;
+        width: 150%;
+        height: 200px;
+      }
     }
   }
   &__text {
-    flex: 1 1 55%;
+    padding-top: 2rem;
+    margin-top: -4rem;
+    border-radius: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: $primary;
     padding-left: 2rem;
     .btn {
-      background: $primary;
+      background: $secondary;
+      margin-bottom: 1rem;
     }
     h1 {
       font-size: 3rem;

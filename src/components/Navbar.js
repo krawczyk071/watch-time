@@ -25,11 +25,11 @@ const Navbar = () => {
             <Link href={"/shop"}>Explore</Link>
           </li>
           <li className="navbar__list__item">
-            <Link href={"/sale"}>Women</Link>
+            <Link href={"/sale"}>Womens</Link>
           </li>
           <li className="navbar__list__item">
             <Link href={"/filtered"}>
-              Retro <i className="fa-regular fa-snowflake"></i>
+              Special<i className="fa-regular fa-snowflake"></i>
             </Link>
           </li>
           <li className="navbar__list__item" onClick={cartToggler}>

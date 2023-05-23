@@ -1,7 +1,7 @@
 .footer {
   flex-shrink: 0;
-  color: #fffafa;
-  background: $gradient1;
+  color: $text2;
+  background: $accent;
   padding: 1rem;
   &__box {
     display: flex;
@@ -12,7 +12,8 @@
     }
     &__subtext {
       font-size: 1.2rem;
-      color: $primary;
+      color: $secondary;
+      font-weight: bold;
     }
     &__text {
       font-size: 0.7rem;

@@ -1,29 +1,14 @@
-"use client";
-
-import { useRouter } from "next/navigation";
+import { getTopRated } from "@/utils/sanity";
 import React from "react";
-import { hotData } from "../utils/constants";
-const TopItem = ({ hat }) => {
-  const router = useRouter();
+import TopItem from "./TopItem";
 
-  return (
-    <div
-      className="top__item"
-      onClick={() => router.push(`/detail/${hat._id}`)}
-    >
-      <div className="top__img">
-        <img src={hat.url} alt="" />
-      </div>
-      <p>New Era {hat.price}$</p>
-    </div>
-  );
-};
+const Top = async () => {
+  const top3 = await getTopRated(3);
 
-const Top = () => {
-  const hots = hotData.map((h) => <TopItem key={h._id} hat={h} />);
+  const hots = top3.map((h) => <TopItem key={h._id} item={h} />);
   return (
     <div className="top">
-      <h2>Hottest Items:</h2>
+      <h2>Top Sellers:</h2>
       <div className="top__box">{hots}</div>
     </div>
   );

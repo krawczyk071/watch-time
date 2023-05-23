@@ -3,18 +3,18 @@ import { useRouter } from "next/navigation";
 import { formatPrice } from "../utils/helpers";
 import { urlForImage } from "../../sanity/lib/image";
 
-const Card = ({ hat }) => {
+const Card = ({ product }) => {
   const router = useRouter();
   return (
     <div
       className="card__item"
-      onClick={() => router.push(`/detail/${hat._id}`)}
+      onClick={() => router.push(`/detail/${product._id}`)}
     >
       <div className="card__item__img">
-        <img src={urlForImage(hat.images[0])} alt="" />
+        {product.images && <img src={urlForImage(product.images[0])} alt="" />}
       </div>
-      <h3 className="card__item__price">{formatPrice(hat.price * 100)}</h3>
-      <p className="card__item__text">{hat.name}</p>
+      <h3 className="card__item__price">{formatPrice(product.price * 100)}</h3>
+      <p className="card__item__text">{product.name}</p>
     </div>
   );
 };

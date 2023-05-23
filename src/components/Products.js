@@ -8,9 +8,7 @@ import Pagination from "./Pagination";
 import { products as productsEx } from "../utils/apiExample";
 import { getProducts } from "@/utils/sanity";
 
-const Products = async (params) => {
-  const products = await getProducts();
-
+const Products = ({ items }) => {
   // const [itemOffset, setItemOffset] = useState(0);
   // const [hats, setHats] = useState({
   //   data: {},
@@ -53,8 +51,8 @@ const Products = async (params) => {
   return (
     <div className="products">
       <div className="cards__box">
-        {products.map((hat) => (
-          <Card key={hat._id} hat={hat} />
+        {items.map((item) => (
+          <Card key={item._id} product={item} />
         ))}
       </div>
 

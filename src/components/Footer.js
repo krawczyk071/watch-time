@@ -9,7 +9,9 @@ const Footer = () => {
             Watch<span>Time</span>
           </div>
         </div>
-        <div className="footer__box__subtext">Time is now</div>
+        <div className="footer__box__subtext">
+          Timepieces Designed for Your Every Moment
+        </div>
         <p className="footer__box__text">Szymon Krawczyk © 2023</p>
         <p className="footer__box__text">Privacy Policy | Refund Policy</p>
       </div>

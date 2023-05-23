@@ -3,8 +3,9 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import ColorsFilter from "@/components/ColorsFilter";
 import Products from "@/components/Products";
+import { getProducts } from "@/utils/sanity";
 
-const Shop = () => {
+const Shop = async () => {
   // const [searchParams] = useSearchParams();
   // const [team, setTeam] = useState("");
   const router = useRouter();
@@ -12,11 +13,11 @@ const Shop = () => {
   // useEffect(() => {
   //   setTeam(searchParams.get("dimensionValueID"));
   // }, [searchParams]);
-
+  const products = await getProducts();
   return (
     <>
-      <ColorsFilter />
-      <Products query={`dimensionValueID=${team}`} />
+      {/* <ColorsFilter /> */}
+      <Products items={products} />
     </>
   );
 };

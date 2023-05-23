@@ -33,6 +33,8 @@ $shadow1: 0 4px 0.5rem -0.125rem rgba(0, 0, 0, 0.1),
   0 0.125rem 0.25rem -0.125rem rgba(0, 0, 0, 0.06);
 $gradient1: linear-gradient(90deg, #6d5a88, #1f1d28);
 $gradient2: linear-gradient(700deg, #061161, #aa090e);
+$gradient3: radial-gradient(circle at bottom, #000000, transparent 80%);
+$backdrop: rgba(0, 0, 0, 0.5);
 
 $barwidth: 500px;
 

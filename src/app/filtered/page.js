@@ -1,12 +1,9 @@
 import Products from "@/components/Products";
-import React from "react";
+import { getSpecial } from "@/utils/sanity";
 
-const Filtered = () => {
-  return (
-    <div className="winter">
-      <Products query={`dimensionValueID=Silhouette:Beanie`} />
-    </div>
-  );
+const Special = async () => {
+  const special = await getSpecial();
+  return <Products items={special} />;
 };
 
-export default Filtered;
+export default Special;

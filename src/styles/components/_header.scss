@@ -1,5 +1,5 @@
 .header {
-  background: $secondary;
+  background: $accent;
 }
 .navbar {
   margin: 0 auto;
@@ -36,7 +36,7 @@
     &__item {
       display: inline;
       font-weight: bold;
-      margin: 1rem;
+      margin: 0.8rem;
       a,
       .likeA {
         &,
@@ -44,13 +44,13 @@
         &:active {
           font-weight: bold;
           text-decoration: none;
-          color: $text1;
+          color: $text2;
           cursor: pointer;
         }
         &:hover {
           text-decoration: underline;
           font-weight: bold;
-          color: $text1;
+          color: $text2;
         }
       }
     }
