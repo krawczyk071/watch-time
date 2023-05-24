@@ -33,27 +33,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+  color: $text1;
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
 
-.review__box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  overflow: hidden;
-}
-
-.review__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #fffafa;
-  border-radius: $radius1;
-  padding: 1rem;
-  margin: 0.7rem;
-  box-shadow: $shadow1;
-  p {
-    margin-block: 0.5rem;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fffafa;
+      // border-radius: $radius1;
+      padding: 1rem;
+      margin: 0.7rem;
+      box-shadow: $shadow1;
+      p {
+        margin-block: 0.5rem;
+        color: $text2;
+      }
+    }
   }
+}
+.rating {
+  color: $text2;
 }
 
 @media screen and (max-width: $break-sm) {

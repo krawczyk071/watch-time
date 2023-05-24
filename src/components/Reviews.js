@@ -9,7 +9,7 @@ const Reviews = () => {
   return (
     <div className="reviews">
       <h2>Our customer say:</h2>
-      <div className="review__box">{reviews}</div>
+      <div className="reviews__box">{reviews}</div>
     </div>
   );
 };
