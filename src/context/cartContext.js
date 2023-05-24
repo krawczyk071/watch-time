@@ -10,10 +10,11 @@ const reducer = (state, action) => {
         return [
           ...state,
           {
-            _id: item._id,
+            // _id: item._id,
+            // price: item.price,
+            // productTitle: item.name,
+            ...item,
             qty: qty,
-            price: item.price,
-            productTitle: item.name,
           },
         ];
       } else {

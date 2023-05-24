@@ -58,21 +58,21 @@ export const reviewData = [
   {
     text: "Men's Blitzing Cap is a must-have accessory for anyone with a love of caps. In addition to its durability, this cap's design ensures a snug and comfortable fit. You'll stay cool and dry thanks to a built-in HeatGear® sweatband and breathable threads. The UA Blitzing Cap is the perfect accessory to look your best and exhibit your love for baseball caps.",
     short:
-      "Men's Blitzing Cap is a must-have accessory for anyone with a love of caps. In addition to its durability, this cap's design ensures a snug and comfortable fit.",
+      "Timex watches offer reliable timekeeping and stylish designs at affordable prices. They are durable, versatile, and suitable for both casual and formal occasions.",
     name: "John",
     rating: 4.3,
   },
   {
     text: "Carhartt's Odessa cap achieves the perfect balance of ruggedness and comfort. It is made from 100% cotton duck with a Coolmax sweatband to keep you cool on hot days. Adjustable rear closure and a pre-curved visor makes it ideal for various head shapes and sizes. With the Carhartt logo stitched on the front, this cap also adds to your aesthetic.",
     short:
-      "Carhartt's Odessa cap achieves the perfect balance of ruggedness and comfort. It is made from 100% cotton duck with a Coolmax sweatband to keep you cool on hot days.",
+      "Timex watches are absolute game-changers! With their unbeatable reliability, stunning designs, and wallet-friendly prices, they're a must-have accessory.",
     name: "Kate",
     rating: 3.8,
   },
   {
     text: "Whether you're looking for a stylish sports cap to wear on your outdoor adventures, during your fitness routines, or to give a final touch to your casual clothes, this baseball cap has you covered. Stop putting your health and well-being in danger by venturing into the sun unprotected.",
     short:
-      "Whether you're looking for a stylish sports cap to wear on your outdoor adventures, during your fitness routines, or to give a final touch to your casual clothes.",
+      "Timex watches are pure perfection! With their impeccable craftsmanship, timeless elegance, and affordable price tags, they effortlessly blend style and functionality.",
     name: "Lisa",
     rating: 4.9,
   },

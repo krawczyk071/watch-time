@@ -28,9 +28,7 @@ const Navbar = () => {
             <Link href={"/sale"}>Womens</Link>
           </li>
           <li className="navbar__list__item">
-            <Link href={"/filtered"}>
-              Special<i className="fa-regular fa-snowflake"></i>
-            </Link>
+            <Link href={"/filtered"}>Special</Link>
           </li>
           <li className="navbar__list__item" onClick={cartToggler}>
             <div className="likeA">
