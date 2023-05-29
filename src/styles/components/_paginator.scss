@@ -1,5 +1,6 @@
 .paginator {
   display: flex;
+  align-self: center;
   a,
   a:hover,
   a:active,
@@ -10,10 +11,11 @@
   &__btn {
     padding: 0.7rem 1.5rem;
     margin: 0.5rem;
-    background: $bg-highlight1;
+    background: $primary;
     border-radius: $radius1;
     &--active {
-      background: $primary;
+      background: $accent;
+      color: $text2;
     }
   }
 }
