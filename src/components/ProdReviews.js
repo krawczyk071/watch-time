@@ -28,7 +28,7 @@ const ProdReviews = ({ id }) => {
     .filter((r) => r.ReviewText)
     .map((r) => {
       return (
-        <div>
+        <div key={r.Title}>
           <p>{r.Title}</p>
           <p>{r.ReviewText}</p>
           <p>{r.SubmissionTime}</p>
