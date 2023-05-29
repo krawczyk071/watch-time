@@ -11,8 +11,7 @@ const Hero = () => {
           <Image
             className="object-contain"
             alt="main"
-            width={500}
-            height={365}
+            fill={true}
             src={rolexbw}
             placeholder="blur"
           />

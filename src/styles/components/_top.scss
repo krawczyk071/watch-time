@@ -67,8 +67,22 @@
       flex-direction: column;
     }
   }
-  .review__box {
+  .reviews__box {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: $break-md) {
+  .top {
+    &__box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .reviews__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

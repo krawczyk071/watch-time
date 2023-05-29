@@ -7,7 +7,8 @@
     align-items: center;
     justify-content: center;
     &__img {
-      max-width: 500px;
+      width: clamp(100px, 80vw, 500px);
+      height: clamp(100px, 80vw, 365px);
       position: relative;
       &:before {
         content: "";
@@ -37,17 +38,19 @@
     h1 {
       font-size: 3rem;
       font-weight: 900;
+      text-align: center;
     }
   }
 }
 
-@media screen and (max-width: $break-sm) {
+@media screen and (max-width: $break-md) {
   .hero {
     flex-direction: column;
     align-items: center;
     &__text {
       text-align: center;
       padding: 0;
+      margin-inline: 1rem;
     }
   }
 }
