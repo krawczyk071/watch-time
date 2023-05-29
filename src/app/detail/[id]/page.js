@@ -1,9 +1,14 @@
-"use client";
 import ProductBox from "@/components/ProductBox";
 
 const Detail = ({ params }) => {
+  if (!params?.id) {
+    return;
+  }
+  console.log({ params });
   return (
-    <div className="detail">{params.id && <ProductBox id={params.id} />}</div>
+    <div className="detail">
+      <ProductBox id={params.id} />
+    </div>
   );
 };
 

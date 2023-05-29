@@ -25,14 +25,14 @@ const Navbar = () => {
             <Link href={"/shop/1"}>Explore</Link>
           </li>
           <li className="navbar__list__item">
-            <Link href={"/sale"}>Womens</Link>
+            <Link href={"/women/1"}>Womens</Link>
           </li>
           <li className="navbar__list__item">
-            <Link href={"/filtered"}>Special</Link>
+            <Link href={"/special"}>Special</Link>
           </li>
           <li className="navbar__list__item" onClick={cartToggler}>
             <div className="likeA">
-              Cart (
+              Cart <i className="fa-solid fa-cart-shopping"></i> (
               {cart.reduce((acc, item) => {
                 return acc + item.qty;
               }, 0)}

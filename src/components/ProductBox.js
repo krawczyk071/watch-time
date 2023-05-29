@@ -1,13 +1,23 @@
 import { getById } from "@/utils/sanity";
 import { urlForImage } from "../../sanity/lib/image";
 import OrderBox from "./OrderBox";
+import Image from "next/image";
 
-const HatBox = async ({ id }) => {
+const ProductBox = async ({ id }) => {
   const [product] = await getById(id);
 
   const photos = product.images
     .slice(0, -1)
-    .map((url) => <img src={urlForImage(url)} key={url} alt="additional" />);
+    .map((url) => (
+      <Image
+        className="object-contain"
+        width={138}
+        height={138}
+        alt="additional"
+        src={urlForImage(url).url()}
+        key={url}
+      />
+    ));
 
   return (
     <div className="detail__box">
@@ -18,7 +28,14 @@ const HatBox = async ({ id }) => {
       <div className="detail__box__panel">
         <div className="detail__box__panel__left">
           <div className="detail__box__panel__left__photo">
-            <img src={urlForImage(product.images[0])} alt="main" />
+            <div className="detail__box__panel__left__photo__img">
+              <Image
+                // className="object-contain"
+                alt="main"
+                fill={true}
+                src={urlForImage(product.images[0]).url()}
+              />
+            </div>
           </div>
           {photos && (
             <div className="detail__box__panel__left__photo-more">{photos}</div>
@@ -37,4 +54,4 @@ const HatBox = async ({ id }) => {
   );
 };
 
-export default HatBox;
+export default ProductBox;

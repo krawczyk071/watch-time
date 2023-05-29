@@ -24,21 +24,26 @@
       align-content: center;
       justify-content: center;
       &__left {
-        flex: 1 1 60%;
+        flex: 1 1 50%;
         display: flex;
         flex-direction: column;
         &__photo {
-          /* flex: 0 1 400px; */
           align-self: center;
-          width: 400px;
-          height: 400px;
+          &__img {
+            position: relative;
+            width: clamp(100px, 100vw, 400px);
+            height: clamp(100px, 100vw, 400px);
+          }
         }
         &__photo-more {
           height: 138px;
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(3, 138px);
           gap: 0.3rem;
           margin: 0.4rem 0.4rem;
+          img {
+            width: 100%;
+          }
         }
       }
       &__right {
@@ -65,15 +70,16 @@
 
 .order__box {
   /* flex: 1 1 40%; */
+  max-width: 300px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background: white;
-  border-radius: $radius1;
-  margin: 0 1rem;
-  box-shadow: $shadow1;
+  // border-radius: $radius1;
+  // box-shadow: $shadow1;
+  border-bottom: 5px solid $accent;
   align-self: start;
   h1 {
     font-size: 2rem;

@@ -21,8 +21,12 @@ export async function getSpecial() {
   return client.fetch(`*[name match "ironman" || details match "graphics"]`);
 }
 export async function getPaginated(skip = 0, limit = 24) {
-  console.log({ skip, limit });
   const last = skip + limit;
   return client.fetch(`{"items": *[_type == "watches"][${skip}...${last}],
   "total": count(*[_type == "watches"])}`);
+}
+export async function getKeywordPaginated(keyword, skip = 0, limit = 24) {
+  const last = skip + limit;
+  return client.fetch(`{"items": *[_type == "watches" && name match "${keyword}*"][${skip}...${last}],
+  "total": count(*[_type == "watches" && name match "${keyword}*"])}`);
 }
