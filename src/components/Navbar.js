@@ -43,10 +43,10 @@ const Navbar = () => {
         <div className="navbar__logo">
           Watch<span>Time</span>
         </div>
-        <button class="nobtn burger__btn" onClick={toggleBurger}>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <button className="nobtn burger__btn" onClick={toggleBurger}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
         </button>
       </nav>
       <CartBar cartOpen={cartOpen} cartToggler={cartToggler} />
