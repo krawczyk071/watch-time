@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import rolexbw from "../../public/img/rolexbw.png";
 
 const Hero = () => {
   return (
@@ -12,7 +13,8 @@ const Hero = () => {
             alt="main"
             width={500}
             height={365}
-            src="/img/rolexbw.png"
+            src={rolexbw}
+            placeholder="blur"
           />
         </div>
       </div>

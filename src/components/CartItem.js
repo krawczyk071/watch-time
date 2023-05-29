@@ -11,7 +11,7 @@ const CartItem = ({ item }) => {
           className="object-contain"
           width={100}
           height={100}
-          src={urlForImage(item.images[0])}
+          src={urlForImage(item.images[0]).url()}
           alt=""
         />
       </div>
